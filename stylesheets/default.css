@@ -1,26 +1,31 @@
 body {
-  background-color: #EEE0E5;
+  background-color: #e6e6e6;
+  margin: 0px;
+  padding: 0px;
+
 
 }
 
 header {
-  background-image: url(http://lifewise.canoe.com/assets/img/horoscope/horoscope-gallery-leo.jpg);
+  background-image: url(http://www.grandcanyonwhitewater.com/wp-content/uploads/2014/05/leo.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: 100%;
-  padding-bottom: 5em;
-  padding-top: 0;
+  padding:10px;
   margin-top: 0;
   border-bottom: 1px solid black;
 }
 
 #profile {
   float: left;
+  width: 8%;
+  length: 10%;
 }
 
 #my-title {
   text-align: center;
-  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+  font-family: sans-serif;
+  color: white;
 }
 
 #article-title {
@@ -34,27 +39,29 @@ aside {
 
 nav {
   text-align: center;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.25em;
-  font-family: fantasy;
-  color: purple;
+  font-family: sans-serif;
+  color: white;
+
 }
 
-#tags {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+nav:hover {
+  color: red;
+}
+
+#sidebar {
+  display: block;
+  float: right;
+  width: 10px;
+  margin-left: 10px
   }
 
-
-#archives {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  }
 
 footer {
   border-top: 1px solid black;
+}
+header a:link, header a:visited {
+  color: white;
+  text-decoration: none;
 }
