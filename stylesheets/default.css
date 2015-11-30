@@ -1,0 +1,60 @@
+body {
+  background-color: #EEE0E5;
+
+}
+
+header {
+  background-image: url(http://lifewise.canoe.com/assets/img/horoscope/horoscope-gallery-leo.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  padding-bottom: 5em;
+  padding-top: 0;
+  margin-top: 0;
+  border-bottom: 1px solid black;
+}
+
+#profile {
+  float: left;
+}
+
+#my-title {
+  text-align: center;
+  font: 400 130px/0.8 'Great Vibes', Helvetica, sans-serif;
+}
+
+#article-title {
+  text-align: center;
+}
+
+aside {
+  float: right;
+  padding-right: 2em;
+}
+
+nav {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25em;
+  font-family: fantasy;
+  color: purple;
+}
+
+#tags {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  }
+
+
+#archives {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  }
+
+footer {
+  border-top: 1px solid black;
+}
