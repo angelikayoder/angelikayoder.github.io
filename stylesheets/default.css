@@ -1,7 +1,7 @@
 body {
   background-color: #e6e6e6;
-  margin: 0px;
-  padding: 0px;
+  margin: 2%;
+  padding: 1%;
 
 
 }
@@ -20,6 +20,12 @@ header {
   float: left;
   width: 8%;
   length: 10%;
+  padding-bottom: 1%;
+  padding-right: 2%;
+  position: absolute;
+  top: 5%;
+  left: 0;
+
 }
 
 #my-title {
@@ -30,6 +36,9 @@ header {
 
 #article-title {
   text-align: center;
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 aside {
@@ -57,9 +66,35 @@ nav:hover {
   margin-left: 10px
   }
 
+#p_contact {
+  text-align: left;
+  float: right;
+
+
+}
+.contact_form {
+  padding: 0em;
+  font-size: 1em;
+  font-family: sans-serif;
+  position: absolute;
+  top: 30%;
+
+}
+.contact_form input, text-area {
+  padding: 0.8em;
+  border; 1px solid black;
+  width; 16em;
+
+}
+
+.contact_form text-area {
+  max-width: 30em;
+  max-height: 10em;
+}
 
 footer {
   border-top: 1px solid black;
+  height: 2em;
 }
 header a:link, header a:visited {
   color: white;
