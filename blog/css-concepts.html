@@ -5,56 +5,80 @@
 <head>
   <title>Angelika Yoder's blog</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
 </head>
 
 <body>
-   <header>
-      <h1>My Blog for Dev Bootcamp 2.7</h1>
-        <img src="../imgs/profilepic.jpg" alt="profile picture"> <!-- Our Headshot -->
-       <a href="http://www.twitter.com"><img src="../imgs/icon-twitterLogo.png" alt="Twitter logo"></a> <!-- Social Media Picture Links -->
-       <a href="http://www.facebook.com/pages/xxxx/xxxxxx"><img src="../imgs/facebookIcon.png" alt="Facebook logo"></a> <!-- Social Media Picture Links -->
-       <a href="http://www.linkedin.com/"><img src="../imgs/linkedin.png" alt="Linkedin logo"></a> <!-- Social Media Picture Links -->
-       <aside>
-       <a href="#">About Me</a>
-       <a href="#">Contact</a>
-       <a href="#">Website</a>
-       <a href="#">Blog</a>
-       </aside>
-       <hr>
+  <header>
+    <h1 id="my-title">Angelika Yoder's Blog</h1>
+    <img id="profile" src="../imgs/profilepic.jpg">
 
-   </header>
+    <aside>
+      <a href="https://twitter.com/angelikayoder"><img src="../imgs/icon-twitterLogo.png"></a>
+      <a href="https://www.facebook.com/angelika.yoder/about"><img src="../imgs/facebookIcon.png"></a>
+      <a href="https://www.linkedin.com/in/angelika-yoder-394270109"><img src="../imgs/linkedin.png"></a>
+      <a href="https://github.com/angelikayoder"><img src="../imgs/octocat.png"></a>
+    </aside>
+    <nav>
+      <a href="http://angelikayoder.github.io/">Website</a>  |
+      <a href="http://angelikayoder.github.io/about-me">About Me</a>  |
+      <a href="http://angelikayoder.github.io/blog/">Blog</a>  |
+      <a href="http://angelikayoder.github.io/contact"/>Contact</a>
+    </nav>
+
+  </header>
+
+  <div id="sidebar">
+    <h3> Tags </h3>
+    <ul>
+      <li><a href="#">Social</a></li>
+      <li><a href="#">Google</a></li>
+      <li><a href="#">Website</a></li>
+    </ul>
+
+    <h3> Archives </h3>
+    <ul>
+      <li><a href="#">November</a></li>
+      <li><a href="http://angelikayoder.github.io/blog/arrays-hashes.html">December</a></li>
+    </ul>
+  </div>
 
   <article>
 
-  <h2>CSS Positioning</h2>
-  <h4>11/29/15</h4>
+    <h2>CSS Positioning</h2>
+    <h4>11/29/15</h4>
 
-<img src="http://3.bp.blogspot.com/_sAFaRrBjzTo/TGpqjEzmMiI/AAAAAAAAADQ/7eFf61Kptyk/s1600/cssposition.PNG" alt="diagram illustrating CSS Positioning">
-<p>New to CSS and need to know the differences between absolute, fixed, static, and relative positioning?</br>
-Below are some succint descriptions to help you keep them straight. The image above was taken from <a href="http://3.bp.blogspot.com/_sAFaRrBjzTo/TGpqjEzmMiI/AAAAAAAAADQ/7eFf61Kptyk/s1600/cssposition.PNG">this handy blog illustration</a> because mine weren't nearly as good.</p>
-<p>Absolute positioning- The element is positioned relative to its first positioned (not static) ancestor element.</p>
-<p>Fixed positioning- The element is positioned relative to the browser window. Right or wrong, I've used fixed positioning to anchor certain fixtures to their place: like an element we wanted to use as a header or footer. Also, we anchored one of the squares to it's position in order to make the rest of the squares relative to the first squares position thus, distributing them evenly after the first square (probaly not best practice).</p>
-<p>Static positioning- Default value. Elements render in order, as they appear in the document flow.</p>
-<p>Relative positioning- The element is positioned relative to its normal position. As I cited in my "fixed positioning" definition, we made several squares all relative to the position squares before them in order to space them out evenly.</p>
+    <img src="http://3.bp.blogspot.com/_sAFaRrBjzTo/TGpqjEzmMiI/AAAAAAAAADQ/7eFf61Kptyk/s1600/cssposition.PNG" alt="diagram illustrating CSS Positioning">
+      <p>New to CSS and need to know the differences between absolute, fixed,
+        static, and relative positioning? Below are some succint descriptions to
+        help you keep them straight. The image above was taken from
+        <a href="http://3.bp.blogspot.com/_sAFaRrBjzTo/TGpqjEzmMiI/AAAAAAAAADQ/7eFf61Kptyk/s1600/cssposition.PNG">this handy blog illustration</a>
+        because mine weren't nearly as good.</p>
+      <p>Absolute positioning- The element is positioned relative to its first
+        positioned (not static) ancestor element.</p>
+      <p>Fixed positioning- The element is positioned relative to the browser window.
+         Right or wrong, I've used fixed positioning to anchor certain fixtures
+         to their place: like an element we wanted to use as a header or footer.
+         Also, we anchored one of the squares to it's position in order to make
+         the rest of the squares relative to the first squares position thus,
+         distributing them evenly after the first square (probaly not best practice).</p>
+      <p>Static positioning- Default value. Elements render in order, as they
+        appear in the document flow.</p>
+      <p>Relative positioning- The element is positioned relative to its normal
+        position. As I cited in my "fixed positioning" definition, we made
+        several squares all relative to the position squares before them in order
+        to space them out evenly.</p>
 
-<p>I found the fixed positioning to be the easiest to use because things stuck where I stuck them. Like I'd said before, probably not best practice. The most difficult for me was the relative positioning mainly because it required so much forethought into what the final result would be.</p>
+      <p>I found the fixed positioning to be the easiest to use because things
+        stuck where I stuck them. Like I'd said before, probably not best practice.
+        The most difficult for me was the relative positioning mainly because it
+        required so much forethought into what the final result would be.</p>
 
-   </article>
+    </article>
 
-<a href="#">Older Posts</a>
+    <a href="#">Older Posts</a>
 
-<aside>
-  <h3> Tags </h3>
-  <a href="#">Social</a>
-  <a href="#">Google</a>
-  <a href="#">Website</a>
- </aside>
-<aside>
-  <h3> Archives </h3>
-  <a href="#">August</a>
-  <a href="#">September</a>
-</aside>
+
 
 
 

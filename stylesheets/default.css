@@ -15,7 +15,20 @@ header {
   margin-top: 0;
   border-bottom: 1px solid black;
 }
-
+article {
+    display: block;
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 1em;
+    align-content: center;
+    text-align: left;
+    /*width: 80%;*/
+    /*float: left;*/
+    min-height: 20em;
+}
 #profile {
   float: left;
   width: 8%;
@@ -62,16 +75,21 @@ nav:hover {
 #sidebar {
   display: block;
   float: right;
-  width: 10px;
+  /*width: 20%;*/
   margin-left: 10px
   }
+
+#sidebar ul {
+  list-style: none;
+  padding: 0px;
+
+}
 
 #p_contact {
   text-align: left;
   float: right;
-
-
 }
+
 .contact_form {
   padding: 0em;
   font-size: 1em;
