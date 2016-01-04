@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Angelika Yoder's blog</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+   <header>
+      <h1 id="my-title">Angelika Yoder's Blog</h1>
+       <img id="profile" src="../imgs/profilepic.jpg">
+
+       <aside>
+       <a href="https://twitter.com/angelikayoder"><img src="../imgs/icon-twitterLogo.png"></a>
+       <a href="https://www.facebook.com/angelika.yoder/about"><img src="../imgs/facebookIcon.png"></a>
+       <a href="https://www.linkedin.com/in/angelika-yoder-394270109"><img src="../imgs/linkedin.png"></a>
+       <a href="https://github.com/angelikayoder"><img src="../imgs/octocat.png"></a>
+     </aside>
+     <nav>
+       <a href="http://angelikayoder.github.io/">Website</a>  |
+       <a href="http://angelikayoder.github.io/about-me">About Me</a>  |
+       <a href="http://angelikayoder.github.io/blog/">Blog</a>  |
+       <a href="http://angelikayoder.github.io/contact"/>Contact</a>
+     </nav>
+
+   </header>
+
+ </header>
+
+ <div id="sidebar">
+   <h3> Tags </h3>
+   <ul>
+   <li><a href="#">Social</a></li>
+   <li><a href="#">Google</a></li>
+   <li><a href="#">Website</a></li>
+ </ul>
+
+   <h3> Archives </h3>
+   <ul>
+   <li><a href="#">November</a></li>
+   <li><a href="http://angelikayoder.github.io/blog/arrays-hashes.html">December</a></li>
+ </ul>
+ </div>
+
+
+
+    <article>
+      <h2>Ruby Hashes vs. JavaScript Objects</h2>
+      <h4>January 3, 2016</h4>
+      <h5>Overview</h5>
+
+      <p>How do we access information from Ruby Hashes and JavaScript Objects?
+        JavaScript(JS) and Ruby are both great tools for creating and managing
+        collections of related information as well as being pretty easy to use. How do
+        they stack up to each other?</p>
+
+      <p>The definish for a hash in ruby-doc.org, "... a Hash is a collection of unique keys
+        and their values. They are similar to Arrays, but where an Array uses
+        integers as its index, a Hash allows you to use any object type." For
+        additional description and a good example of a Ruby hash, see my previous
+        blog post Arrays and Hashes.</p>
+
+      <p>Similarly, Mozilla Developer Network (MDN) states "a JavaScript object
+        is a collection of properties, and a property is an association between
+        a name (or key) and a value. Also, a property's value can be a function,
+        in which case the property is known as a method."</p>
+
+      <p>Not only are their definitions strikingly similar, the means by which they
+        are created is practically identical:</p>
+
+      <h5>How to create a new hash in Ruby</h5>
+
+      <p><code> grades = {"Jane Doe": 10, "Jim Doe": 6 }</code></p>
+
+      <h5>How to create a new object in JS</h5>
+
+      <p><code>var grades = {"Jane Doe": 10, "Jim Doe": 6};</code></p>
+
+        <h5>Hash keys and their property names</h5>
+
+        <p>Property names for JS and Ruby keys both must be unique. However, JS
+          object properties are "just ordinary variables, except for their attachment
+          to objects" (MDN).</p>
+
+          <p>However, hash keys in Ruby can be almost anything including; symbols,
+            strings, numbers, arrays, and/or even other hashes.
+
+            <h5>Values</h5>
+
+            <p>Ruby hash and JS object property values can be almost anything.
+              In fact, a JS property values can be other objects, or it could be
+               a function.</p>
+
+  <h5>Accessing information</h5>
+
+  <p>Although very similar, there are still some differences in how we access
+    the stored information in key/value and property/value pairs. While using Ruby,
+    accessing hash values is easy if the name of the key if the name of the key/value
+    is known.
+    For example:
+    <p><code> hash[key] => returns value</code></p>
+    <p><code>hash.key(value) => returns key</code></p>
+
+  <p>It's also easy to access property values in JS using one of two ways.
+    The two formats are called "dot notation" and "bracket notation".
+    They look like this:</p>
+    <p><code> object.name => returns value</code></p>
+    <p><code>object["name"] => returns value</code></p>
+
+    <p>It could be said that using "dot notation" is best practice whenever possible,
+      possibly because it's more succinct and easier to read. However, bracket
+      notation isn't without merit. For example, property names with spaces in them
+      can be accessed as well as generating property names. For example:</p>
+      <p><code> object["key two"] => returns value of property "key two"</code></p>
+      <p><code>object["key" + 3] => returns value of property "key3"</code></p>
+
+  <h4>Conclusion</h4>
+
+  <p>This is only an introduction into the potentially infinate ways JS and ruby
+      hashes/objects can be used to power your websites. The ruby-docs and MDN
+      are go-to resources for the industry and provide a lot more info on <thead>
+      topic.</p>
+  </article>
+
+
+
+
+ <footer>
+   <p><a href="#">Legal</a></p>
+ </footer>
+
+
+ </body>
+
+</html>
