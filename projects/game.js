@@ -12,7 +12,7 @@ var bgImage = new Image();
 bgImage.onload = function () {
 	bgReady = true;
 };
-bgImage.src = "forest.jpg";
+bgImage.src = "imgs/forest.jpg";
 
 // mom image
 var momReady = false;
@@ -20,7 +20,7 @@ var momImage = new Image();
 momImage.onload = function () {
 	momReady = true;
 };
-momImage.src = "gotchaMom.png";
+momImage.src = "imgs/gotchaMom.png";
 
 // reese image
 var reeseReady = false;
@@ -28,7 +28,7 @@ var reeseImage = new Image();
 reeseImage.onload = function () {
 	reeseReady = true;
 };
-reeseImage.src = "scaryReese.png";
+reeseImage.src = "imgs/scaryReese.png";
 
 //Gotcha image is broken for now, will fix later. Goal is for word "Gotcha" to
 // flash on screen if Reese is caught.
