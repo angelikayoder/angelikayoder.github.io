@@ -1,0 +1,40 @@
+{
+  "name": "Strapped",
+  "version": "1.4.0",
+  "description": "Bootstrapped theme",
+  "main": "index.htm",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-bless": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-cssmin": "latest",
+    "gulp-ignore": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-jsbeautifier": "latest",
+    "gulp-jshint": "latest",
+    "gulp-notify": "latest",
+    "gulp-rename": "latest",
+    "gulp-rtlcss": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest",
+    "jshint": "latest"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devleo",
+  "url": "devleo.net",
+  "copyright": "Copyright 2017 Devleo",
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta.2",
+    "flag-icon-css": "^2.8.0",
+    "fontawesome": "^4.7.2",
+    "ionicons": "^3.0.0",
+    "jquery": "3.2.1",
+    "linearicons": "^1.0.1",
+    "retinajs": "^2.0.0"
+  }
+}
