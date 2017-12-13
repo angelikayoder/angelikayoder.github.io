@@ -1,0 +1,703 @@
+//
+// All primary color overrides in one place
+// This is used by core and the color-*.scss files
+// --------------------------------------------------
+
+// Standalone color override ie color-*.scss
+// ----------------------------
+@if $standalone-color {  
+  body {
+    a {
+      color: $link-color;
+      text-decoration: none;
+    } 
+    a:hover {
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+    
+    #footer {
+      border-top: 2px solid $primary_color;/* primary color */
+      
+      #toplink i {
+        color: $primary_color;/* primary color */
+      }
+    } 
+    
+    #header-hidden-link a.show-hide,
+    .flexslider-wrapper .flex-control-nav li a.flex-active, .static-banner .flex-control-nav li a.flex-active {
+      background: $primary_color_dark;/* primary color */
+    }
+    .flex-direction-nav a,
+    .flex-direction-nav a:before {
+      color: $primary_color !important;
+    }
+  
+    // v2.5 navigation
+    .header-hidden {
+      background: $primary_color_dark;/* primary color */
+    }
+    .header-upper {
+      background: $primary_color;/* primary color */
+    }
+    .header {
+      border-bottom-color: $primary_color;/* primary color */
+  
+      .navbar-brand {
+        color: $primary_color;/* primary color */
+      }     
+    }
+  
+  
+    //navbar-nav  
+    .navbar-nav {
+      .divider-vertical {
+        border-left-color: darken($primary_color, 15%);
+        border-right-color: rgba($white, 15%/100.0%);
+      }    
+    }
+  
+    //about
+    .stats {
+      .stat-header {
+        background: $primary_color;
+        @include gradient_radial(lighten($primary_color_dark, 10%), $primary_color_dark);
+        
+        &:after  {
+          border-top-color: $primary_color;/* primary color */
+        }
+      } 
+    } 
+  }  
+  
+  // Sliders
+  .slider-strapped-theme .tp-bullets,
+  .slider-strapped-theme .tp-bullets.round,
+  .slider-strapped-theme .tp-bullets.simplebullets.round,
+  .flex-control-nav {  
+    li a,
+    .bullet {    
+      &:hover,
+      &.flex-active,
+      &.selected {
+        background: $primary_color; 
+      }
+    }
+  }
+  .slider-strapped-theme  {
+    .tp-bannertimer {
+      background: $primary_color;
+    }
+  }
+  
+  // Toggle buttons
+  .bootstrap-switch > div > span.bootstrap-switch-primary {
+    background: $primary_color; 
+  }
+  
+  .bootstrap-switch.bootstrap-switch-focused {
+    border-color: $primary_color;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  }
+  
+  // Dropdown variations
+  .dropdown-menu-primary {
+    border-bottom-color: $primary_color !important;
+    
+    a:hover:before {
+      color: $primary_color !important;
+    }  
+  }
+  
+  // Timelines
+  .timeline-item {
+    border-bottom-color: $primary_color;
+  }
+  .timeline-item.tag-featured:after, .timeline-item.marker-highlight:after, .timeline-item.highlight:after {
+    color: $primary_color;
+  }
+  
+  // carousel
+  .owl-controls.clickable .owl-buttons div:hover,
+  .owl-controls .owl-page.active span, .owl-controls.clickable .owl-page:hover span {
+    background: $primary_color;
+  }
+  
+  .navbar-border-bottom-effect .nav-link:hover:after,
+  .navbar-border-bottom-effect .nav-link:active:after,
+  .navbar-border-bottom-effect .nav-link:focus:after,
+  .navbar-border-bottom-effect .nav-link.active:after {
+    background: $primary_color;
+  }
+  
+  // Sticky
+  body .is-sticky {
+    // backgrounds
+    .sticky-bg-primary {
+      background-color: $primary_color !important;
+    }
+    
+    @each $op_name, $op_value in $op {
+      .sticky-bg-primary.sticky-bg-op-#{$op_name},
+      .bg-primary.sticky-bg-op-#{$op_name} {
+        @include translucent_background($primary_color, $op_value, 1);
+      }
+    }    
+    
+    // text
+    .sticky-text-primary {
+      color: $primary_color !important;
+    }
+    
+    // Borders
+    .sticky-border-primary {
+      border: 1px solid transparent;
+      border-color: $primary_color !important;
+    }
+    
+    @each $op_name, $op_value in $op {
+      .sticky-border-primary.sticky-border-op-#{$op_name},
+      .border-primary.sticky-border-op-#{$op_name} { // works with .border-* & .sticky-border-*
+        @include translucent_border($primary_color, $op_value, 1);
+      }
+    }     
+  }  
+}// if standalone-color
+
+// Cards
+// ----------------------
+.card-primary {
+  border-color: $primary_color;
+  background-color: $primary_color;
+}
+.card-outline-primary {
+  border-color: $primary_color;   
+}
+.card.clickable-element:hover {
+  border: 1px solid $primary_color; 
+}
+
+// Tags
+// ----------------------
+.tag-primary,
+.badge-primary,
+.bg-primary {
+  background-color: $primary_color !important; 
+}
+.bg-primary-bright {
+  background-color: saturate($primary_color, 40%) !important;
+}
+
+// Buttons/links/navs
+// ----------------------
+.btn-link,
+.btn-link:hover {
+  color: $primary_color; 
+}
+.text-primary,
+a.text-primary:hover,
+a.text-primary:focus {
+  color: $primary_color !important; 
+}
+.btn-primary {
+  @include strapped-button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  color: white;
+}
+.btn-outline-primary,
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: $primary_color;
+  border-color: $primary_color;
+  
+  &:hover,
+  &:focus {
+    color: white;
+  }
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary.focus,
+.btn-outline-primary.active,
+.btn-outline-primary:active,
+.btn-outline-primary.active:focus,
+.btn-outline-primary:active:focus,
+.show > .btn-outline-primary.dropdown-toggle,
+.open > .btn-outline-primary.dropdown-toggle {
+  background-color: $primary_color;
+  border-color: $primary_color;
+}
+
+.nav-pills .nav-item.show .nav-link,
+.nav-pills .nav-item.show .nav-link:focus,
+.nav-pills .nav-item.show .nav-link:hover,
+.nav-pills .nav-item.open .nav-link,
+.nav-pills .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open .nav-link:hover,
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:focus, .nav-pills .nav-link.active:hover {
+  background-color: $primary_color;
+  color: white;
+}
+
+.nav-pills-border-bottom .nav-link.active:after,
+.nav-pills-border-bottom-inside .nav-link.active:after {
+  background-color: $primary_color;
+}
+.nav-pills.nav-pills-border-bottom .nav-link:hover,
+.nav-pills.nav-pills-border-bottom .nav-link.active,
+.nav-pills.nav-pills-border-bottom-inside .nav-link.active,
+.nav-tabs-flat .nav-link:hover {
+  &,
+  &:focus {
+    color: $primary_color !important;
+  }
+}
+.nav-tabs-flat .nav-link.active:hover  {
+  color: white !important;
+}
+
+.list-group-item-primary,
+a.list-group-item-primary,
+button.list-group-item-primary {
+  background-color: rgba($brand-primary, 25%/100.0%);
+  color: darken($brand-primary, 20%);
+}
+a.list-group-item-primary,
+button.list-group-item-primary {
+  &:hover,
+  &:focus {
+    color: darken($brand-primary, 20%);
+    background-color: rgba($brand-primary, 45%/100.0%);
+  }
+}
+
+.nav-section-menu .nav .nav-link:hover i,
+.nav-section-menu.nav .nav-link:hover i,
+.nav-section-menu .nav .nav-link.active i,
+.nav-section-menu.nav .nav-link.active i,
+.nav-section-menu .nav .nav-link.active:hover i,
+.nav-section-menu.nav .nav-link.active:hover i,
+.nav-section-menu .nav .active .nav-link i,
+.nav-section-menu.nav .active .nav-link i,
+.nav-section-menu .nav .active .nav-link:hover i,
+.nav-section-menu.nav .active .nav-link:hover i {
+  color: $primary_color !important;
+}
+.nav-section-menu .nav .nav-link.active,
+.nav-section-menu.nav .nav-link.active,
+.nav-section-menu .nav .nav-link.active:hover,
+.nav-section-menu.nav .nav-link.active:hover,
+.nav-section-menu .nav .active .nav-link,
+.nav-section-menu.nav .active .nav-link,
+.nav-section-menu .nav .active .nav-link:hover,
+.nav-section-menu.nav .active .nav-link:hover {
+  border-left-color: $primary_color;
+  color: $primary_color;
+}
+.nav-section-menu.nav-section-menu-right .nav .nav-link.active,
+.nav-section-menu.nav-section-menu-right.nav .nav-link.active,
+.nav-section-menu.nav-section-menu-right .nav .nav-link.active:hover,
+.nav-section-menu.nav-section-menu-right.nav .nav-link.active:hover,
+.nav-section-menu.nav-section-menu-right .nav .active .nav-link,
+.nav-section-menu.nav-section-menu-right.nav .active .nav-link,
+.nav-section-menu.nav-section-menu-right .nav .active .nav-link:hover,
+.nav-section-menu.nav-section-menu-right.nav .active .nav-link:hover {
+  @media (min-width: 768px) {
+    border-right-color: $primary_color;
+  }
+}
+
+.nav-tabs.nav-stacked .active > .nav-link i,
+.nav-tabs.nav-stacked .active > .nav-link:hover i,
+.nav-tabs.nav-stacked .nav-link.active i,
+.nav-tabs.nav-stacked .nav-link.active:hover i,
+.nav-tabs .active > .nav-link,
+.nav-tabs .active > .nav-link:hover,
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active:hover {
+  color: $primary_color;
+}
+.nav-tabs .active > .nav-link,
+.nav-tabs .nav-link.active {
+  &:before {
+    background: $primary_color;
+  }
+}
+
+.page-link,
+.page-link:hover {
+  color: $primary_color;
+}
+.page-item.active .page-link, .page-item.active .page-link:focus, .page-item.active .page-link:hover {
+  background: $primary_color;
+  border-color: $primary_color;
+}
+
+.nav-steps .nav-link.active, .nav-steps .nav-link.active:hover {
+  background: $primary_color;
+  border-color: $primary_color;  
+}
+
+.link-effect-underline:after {
+  background-color: $link-color;
+}
+.link-effect-slideup .nav-link-inner:after {
+  color: $primary_color;
+}
+
+// Progress bars
+// Must be separate definitions
+// ----------------------
+.progress[value]::-webkit-progress-value {
+  background-color: $primary_color;
+}
+.progress[value]::-ms-fill{
+  background-color: $primary_color;
+}
+.progress[value]::-moz-progress-bar{
+  background-color: $primary_color;
+}
+.progress-bar {
+  background-color: $primary_color; 
+}
+
+// Alerts
+// --------------------
+.alert-primary {
+  background-color: rgba($primary_color, 25%/100.0%);
+  border-color: rgba($primary_color, 80%/100.0%);
+  color: darken($primary_color, 20%);
+  
+  hr {
+    border-top-color: rgba($brand-primary, 85%/100.0%);
+  }
+  .alert-link {
+    color: darken($primary_color, 20%);
+  }  
+}
+
+// List grous
+// --------------------
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+   background-color: $primary_color;
+   border-color: $primary_color;
+}
+.list-group-item.active .list-group-item-text,
+.list-group-item.active:focus .list-group-item-text,
+.list-group-item.active:hover .list-group-item-text {
+  color: rgba(white, 90%/100.0%);
+}
+
+// Tables
+// --------------------
+
+// Typography
+// --------------------
+.blockquote {
+  border-left-color: $primary_color;
+}
+.blockquote-reverse {
+  border-right-color: $primary_color;
+}
+
+.tag-cloud a.tag {
+  color: $primary_color;
+}
+
+// Cards
+// --------------------
+.card-group .card + .card-outline-primary {
+  @media (min-width: 576px) {
+    border-left: 1px solid $primary_color;
+  }
+}
+
+// Navbar & toggleables
+// --------------------
+@mixin bs-color-overrides(){
+  &.collapse .dropdown-menu {
+    border-bottom-color: $primary_color !important;
+    
+    .dropdown-submenu .dropdown-item:after {
+      border-bottom-color: $primary_color !important; 
+    }
+      
+    .dropdown-item:hover,
+    .dropdown-item:focus, 
+    .dropdown-item.active:hover,
+    .dropdown-item.active,
+    .dropdown-item.active:focus,
+    .active > .dropdown-item,
+    .active > .dropdown-item:hover,
+    .active > .dropdown-item:focus,
+    .show > .dropdown-item,
+    .show > .dropdown-item:hover,
+    .show > .dropdown-item:focus,
+    .open > .dropdown-item,
+    .open > .dropdown-item:hover,
+    .open > .dropdown-item:focus {      
+      &:before {
+        color: $primary_color !important;
+      }
+    }      
+  }
+  .navbar-nav .show > .dropdown-toggle,
+  .navbar-nav .show.active > .dropdown-toggle,
+  .navbar-nav .show > .dropdown-toggle,
+  .navbar-nav .show.active > .dropdown-toggle,
+  .navbar-nav .open > .dropdown-toggle,
+  .navbar-nav .open.active > .dropdown-toggle,
+  .navbar-nav .open > .dropdown-toggle,
+  .navbar-nav .open.active > .dropdown-toggle,
+  .nav-link-dd-effect:hover,
+  .nav-link-dd-effect.active {
+    border-top-color: $primary_color !important;
+  }
+}
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  
+    &#{$infix} {  
+      @include media-breakpoint-up($next) {
+        &.navbar-main,
+        .navbar-main {
+          @include bs-color-overrides();
+        }      
+      }
+    }
+  }
+}
+
+.navbar-border-bottom-effect {
+  .nav-link {
+    &:hover, &:active, &:focus, &.active {
+      &:after { 
+        background:$primary_color; 
+      }
+    }
+  }
+}
+
+// Forms
+// --------------------
+.form-control:focus,
+.form-control:focus:hover {
+  border-color: $primary_color;
+}
+
+// Custom
+// --------------------
+.btn-primary.btn-invert {
+  background-color: darken($primary_color, 10%);
+        
+  &:hover,
+  &:focus {
+    background-color: $primary_color;
+  }  
+}
+
+.text-primary-faded {
+  color: rgba($primary_color, 30%/100.0%) !important; 
+}
+.text-primary-darkend {
+  color: darken($primary_color, 20%) !important; 
+}
+.bg-primary-faded {
+  background-color: rgba($primary_color, 30%/100.0%) !important; 
+}
+.bg-primary-darkend {
+  background-color: darken($primary_color, 20%) !important; 
+}
+
+.border-primary {
+  border-color: $primary_color !important;
+}
+.border-primary-faded {
+  border-color: rgba($primary_color, 30%/100.0%) !important; 
+}
+.border-primary-darkend {
+  border-color: darken($primary_color, 20%) !important; 
+}
+
+@each $name, $value in $op {
+  .bg-op-#{$name} {
+    &.bg-primary {
+      @include translucent_background($primary_color, $value, 1);
+    }
+    &.border-primary-faded {
+      @include translucent_background(rgba($primary_color, 30%/100.0%), $value, 1);
+    }
+    &.border-primary-darkend {
+      @include translucent_background(darken($primary_color, 20%), $value, 1);
+    }    
+  }
+  .border-op-#{$name} {
+    &.border-primary {
+      @include translucent_border($primary_color, $value);
+    }
+    &.border-primary-faded {
+      @include translucent_border(rgba($primary_color, 30%/100.0%), $value);
+    }
+    &.border-primary-darkend {
+      @include translucent_border(darken($primary_color, 20%), $value);
+    }    
+  }
+}
+
+hr.hr-primary {
+  border-top-color: $primary_color !important;
+}
+hr.hr-primary-faded {
+  border-top-color: rgba($primary_color, 30%/100.0%) !important; 
+}
+hr.hr-primary-darkend {
+  border-top-color: darken($primary_color, 20%) !important; 
+}
+
+.header .header-brand-text {
+  color: $primary_color;  
+}
+.price-banner {
+  color: $primary_color;
+}
+.focus-box {
+  border-bottom-color: $primary_color !important;  
+}
+.blog-grid .blog-post {
+  border-bottom-color: $primary_color !important;  
+}
+.page-loader {
+  background: $primary_color !important;
+}
+.owl-nav div:hover,
+.owl-dots .owl-dot.active span,
+.owl-dots .owl-dot:hover span { 
+  background: $primary_color !important;
+}
+
+.modal-progress {
+  background: $primary_color !important;
+}
+
+.overlay,
+.overlay-hover-content {  
+  &.overlay-primary{    
+    &:after {
+      background: $primary_color !important;
+    }
+    
+    .overlay-header:after,
+    .overlay-footer:before {
+      background: lighten($primary_color, 60%) !important;
+    }    
+  }
+}
+
+.header-primary {
+  .header {
+    background: $primary_color;
+
+    .header-inner .header-divider:after {
+      background-color: lighten($primary_color, 15%);
+    }
+  } 
+}
+
+.header-transparent {
+  .header.is-sticky,
+  .is-sticky .header {
+    border-bottom-color: $primary_color;
+  }
+  
+  // color schemes transparent
+  &.header-primary {
+    .header {
+      background: transparent;
+    }
+    
+    .header.is-sticky,
+    .is-sticky .header {
+      @include translucent_background($primary_color, 0.98);
+      border-bottom-color: $brand-inverse;
+    }
+  }  
+}
+
+.header-translucent {
+  .header.is-sticky,
+  .is-sticky .header {
+    border-bottom-color: rgba($primary_color, 60%/100.0%);
+  }
+  
+  // color schemes transparent
+  &.header-dark {  
+    .header.is-sticky,
+    .is-sticky .header {
+      border-bottom-color: rgba($primary_color, 40%/100.0%);
+    }
+  }
+  &.header-primary {
+    .header {
+      @include translucent_background($primary_color, 0.20);
+      border-bottom-color: rgba($primary_color, 60%/100.0%);
+    }    
+    
+    .header.is-sticky,
+    .is-sticky .header {
+      @include translucent_background($primary_color, 0.95);
+      border-bottom-color: $brand-inverse;
+    }
+  }  
+}
+
+// Dividers
+// ----------------------------
+.divider-primary {
+  // Diagonals
+  &.divider-diagonal:before {
+    border-left-color: $primary_color;
+  }
+  &.divider-diagonal-r:before {
+    border-right-color: $primary_color;
+    border-left-color: transparent;
+  }
+  
+  // Arrows
+  &.divider-arrow-b:before {
+    border-top-color: $primary_color;   
+  }
+  &.divider-arrow-t:before {
+    border-bottom-color: $primary_color;   
+  }
+  &.divider-arrow-l:before {
+    border-right-color: $primary_color;    
+  }
+  &.divider-arrow-r:before {
+    border-left-color: $primary_color;    
+  }
+}
+
+// One pager
+// Main Nav
+// ----------------------------
+.list-timeline.list-timeline-primary {
+  &:before {
+    background: $primary_color;
+  }
+  .list-timeline-item {
+    &:before {
+      border-color: $primary_color;
+    }
+    &.active:before,
+    &.show:before {
+      background: $primary_color;
+    }        
+  }        
+}

@@ -1,0 +1,48 @@
+// -------------------------------------------
+// color utils
+// -------------------------------------------
+
+// Text/links
+// -------------------------------------------
+// See loop below since strapped 3.0.9
+
+// Background specials
+// -------------------------------------------
+.bg-transparent  {
+  background: transparent !important;
+}
+
+.bg-shadow {
+  @include box-shadow(1px 1px 5px $gray-100);
+}
+.bg-gradient {
+  @include gradient-y($white, $gray-100);
+}
+.bg-gradient-flip {
+  @include gradient-y($gray-100, $white);
+}
+
+// Theme colors
+// -------------------------------------------
+$as-colors: $as-theme-colors;
+@if $as-theme-colors-extended-options == true {
+  // Include social brands
+  $as-colors: $as-theme-colors-extended;
+}
+
+@each $name, $value in $as-colors {
+  .bg-#{$name} {
+    background-color: $value !important;
+  }
+  .text-#{$name} {
+    color: $value !important;
+  }
+  
+  // Hover states
+  .text-hover-#{$name}:hover {
+    color: $value !important;
+  }
+  .bg-hover-#{$name}:hover {
+    background-color: $value !important;
+  }    
+}
