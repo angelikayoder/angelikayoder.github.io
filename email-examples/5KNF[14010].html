@@ -1,0 +1,540 @@
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <!-- Facebook sharing information tags -->
+    <meta property="og:title" content="{{subject}}">
+    <title>{{subject}}</title>
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+      .body{
+        width: 100% !important;
+        -webkit-text-size-adjust: 100% !important;
+        -ms-text-size-adjust: 100% !important;
+        margin: 0 !important;
+        padding: 0!important;
+        -webkit-text-size-adjust: 100%;
+      }
+      .ExternalClass {
+        width:100% !important;
+      }
+      .ExternalClass,
+      .ExternalClass p,
+      .ExternalClass span,
+      .ExternalClass font,
+      .ExternalClass td,
+      .ExternalClass div {
+        line-height: 100% !important;
+      }
+
+      a {
+        font-weight: 700;
+        -ms-text-size-adjust: 100% !important;
+      }
+      a.button {
+        font-weight: 700;
+        color: #FFFFFF !important;
+        text-decoration: none !important;
+        display: inline-block !important;
+        white-space: nowrap !important;
+        font-family: 'Open Sans', Arial, sans-serif !important;
+        margin: 0 !important;
+        padding: 5px 10px !important;
+        -ms-text-size-adjust: 100% !important;
+      }
+      h1{
+        font-size: 20px !important;
+        line-height: 30px !important;
+        font-family: 'Open Sans', Arial, sans-serif !important;
+        font-weight: 700 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #555555 !important;
+        -ms-text-size-adjust: 100% !important;
+      }
+      img {
+        outline:none !important;
+        text-decoration:none !important;
+        -ms-interpolation-mode:bicubic !important;
+        border:none !important;
+        border-width: 0px !important;
+        text-decoration-line: none !important;
+      }
+      a img {
+        outline:none !important;
+        text-decoration:none !important;
+        -ms-interpolation-mode:bicubic !important;
+        border:none !important;
+        border-width: 0px !important;
+        text-decoration-line: none !important;
+      }
+      /* hide unsubscribe from forwards*/
+      blockquote .original-only, .WordSection1 .original-only {
+        display: none !important;
+      }
+      p {
+        margin: 1em 0 !important;
+        -ms-text-size-adjust: 100% !important;
+      }
+      td {
+        border-collapse: collapse !important;
+        -webkit-text-size-adjust: 100% !important;
+        -ms-text-size-adjust: 100% !important;
+        font-family: 'Open Sans', Arial, sans-serif !important;
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+      .bodyContent{
+        font-size: 16px !important;
+        line-height: 26px !important;
+        color: #454545 !important;
+        -ms-text-size-adjust: 100% !important;
+      }
+      .footerContent {
+        color: #555555 !important;
+        font-size: 10px !important;
+        background-color: #F4F4F4 !important;
+        line-height: 15px !important;
+        -ms-text-size-adjust: 100% !important;
+      }
+      .footerContent a:-webkit-any-link {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: none;
+      } /*prevents underlines on linked images*/
+      .footerContentSubsection {
+        color: #454545 !important;
+        font-size: 8px !important;
+        background-color: #F4F4F4 !important;
+        line-height: 13px !important;
+        -ms-text-size-adjust: 100% !important;
+      }
+      .footerContentSubsection a {
+        color: #555555 !important;
+        -ms-text-size-adjust: 100% !important;
+      }
+      .footerLogo {
+        background-color: #F4F4F4 !important;
+      }
+      .headerLogo {
+        padding: 15px 0 15px 0 !important;
+        background-color: #FFFFFF !important;
+      }
+      .headerContent img {
+        outline: none !important;
+        text-decoration: none !important;
+        -ms-interpolation-mode: bicubic !important;
+        height: auto !important;
+        max-width: 600px !important;
+        border: 0 !important;
+        display:block !important;
+        width: 100% !important;
+      }
+      .hide{
+        display: none !important;
+      }
+      .openSans700 {
+        font-family: 'OpenSans-700' !important;
+      }
+
+      .pad-columns {
+        padding: 0 40px 0 40px !important;
+      }
+      .showMain {
+        display: block !important;
+      }
+      .showSmall {
+        display: none !important;
+      }
+      .templateColumnContainer{
+        display:block !important;
+        -webkit-text-size-adjust: 100% !important;
+        -ms-text-size-adjust: 100% !important;
+        border-collapse: collapse !important;
+      }
+      #bodyCell {
+        height: 100% !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 20px !important;
+      }
+      #outlook a {
+        padding: 0 !important;
+      }
+      #templateContainer{
+        width: 600px !important;
+        max-width: 600px !important;
+      }
+
+      @media only screen and (max-device-width: 500px), (max-width: 500px){
+        body, table, td, p, a, li, blockquote {
+          -webkit-text-size-adjust:none !important;
+        } /* Prevent Webkit platforms from changing default text sizes */
+        body {
+          width:100% !important;
+          min-width:100% !important;
+        } /* Prevent iOS Mail from adding padding to the body */
+        h1{
+          font-size: 22px !important;
+          line-height: 31px !important;
+        }
+        h2{
+          font-size:20px !important;
+          line-height:100% !important;
+        }
+        h3{
+          font-size:18px !important;
+          line-height:100% !important;
+        }
+        h4{
+          font-size:16px !important;
+          line-height:100% !important;
+        }
+        .bodyContent{
+          font-size: 16px !important;
+          line-height: 26px !important;
+        }
+        .columnImage{
+          height:auto !important;
+          max-width:100% !important;
+          width:100% !important;
+        }
+        .footerContent{
+          text-align: center !important;
+          padding: 10px 60px 10px 60px !important;
+          line-height: 15px !important;
+        }
+        .footerContentSubsection {
+          padding: 0 55px 0 55px !important;
+        }
+        .footerLogo {
+          text-align: center !important;
+          max-width: 170px !important;
+          min-width: 170px !important;
+          height: auto;
+          padding: 10px 0 !important;
+        }
+        .footer-spacing{
+          padding:5% 0 0 0 !important;
+        }
+        .headerContent img {
+          outline: none !important;
+          text-decoration: none !important;
+          -ms-interpolation-mode: bicubic !important;
+          height: auto !important;
+          max-width: 100% !important;
+          border: 0 !important;
+          display:block !important;
+          width: 100% !important;
+        }
+        .leftColumnContent{
+          font-size: 16px !important;
+          line-height: 26px !important;
+        }
+        .max-width-mobile{
+          width:100% !important;
+        }
+        .pad-columns {
+          padding: 0 35px 0 35px !important;
+        }
+        .rightColumnContent{
+          font-size: 16px !important;
+          line-height: 26px !important;
+        }
+        .showMain {
+          display: none !important;
+        }
+        .showSmall {
+          display: block !important;
+        }
+        .social-padding{
+          padding-left:10px !important;
+        }
+        .spacing {
+          display:none !important;
+        }
+        .templateColumnContainer{
+          display:block !important;
+          -webkit-text-size-adjust: 100% !important;
+          -ms-text-size-adjust: 100% !important;
+          border-collapse: collapse !important;
+        }
+        #bodyCell {
+          padding:0px !important;
+        }
+        #bodyImage{
+          height:auto !important;
+          max-width:550px !important;
+          width:100% !important;
+        }
+        #headerImage {
+          height:auto !important;
+          width:100% !important;
+        }
+        #templateContainer{
+          width: 100% !important;
+        }
+        #templatePreheader,
+        #templatePreheader2{display:none !important;} /* Hide the template preheader to save space */
+      }
+    </style>
+  </head>
+  <body bgcolor="#F4F4F4" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100%; width: 100%; background-color: #F4F4F4; margin: 0; padding: 0;">
+<!--[if !mso 9]><!-->
+<div style="display:none !important;font-size:1px;line-height:1px;max-height:0px;max-width:0px;opacity:0;overflow:hidden;mso-hide:all;">A new approach to building fact fluency from Graham Fletcher and Tracy Zager Johnston</div>
+
+<div style="display: none; max-height: 0px; overflow: hidden;">&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;‌&nbsp;</div>
+<!--<![endif]-->
+
+<table align="center" border="0" cellpadding="0" cellspacing="0" id="bodyTable" role="presentation" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #F4F4F4; border-collapse: collapse !important; height: 100%; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; width: 100% !important" width="100%">
+	<tbody>
+		<tr>
+			<td align="center" id="bodyCell" valign="top"><!-- BEGIN TEMPLATE // -->
+			<table border="0" cellpadding="0" cellspacing="0" id="templateContainer" role="presentation" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; border-collapse: collapse !important;">
+				<tbody>
+					<tr>
+						<td align="center" valign="top"><!-- BEGIN PREHEADER // -->
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
+							<tbody>
+								<tr>
+									<td align="center" class="spacing" height="10" valign="top">&nbsp;</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // END PREHEADER --></td>
+					</tr>
+					<tr>
+						<td align="center" valign="top">
+						<table border="0" cellpadding="0" cellspacing="0" role="presentation" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
+							<tbody><!-- logo -->
+								<tr>
+									<td align="left" style="padding: 0 0 15px 0; background-color: #ffffff;" valign="top"><a href="https://www.stenhouse.com" target="_blank"><img alt="Stenhouse Publishers" src="https://media.zaner-bloser.com/stenhouse/stenhouse_logo_300.png" style="width: 160px;" width="160"> </a></td>
+								</tr>
+								<!-- banner -->
+								<tr>
+									<td align="left" class="headerContent" style="padding: 0; background-color: #ffffff;" valign="top">
+                    <a href="https://www.stenhouse.com/content/5-kinds-nonfiction" target="_blank">
+                      <img alt="Introducing a new way to think about non-fiction. Melissa Stewart and Marlene Correia | 5 Kinds of Nonfiction | Stenhouse Publishers" id="headerImage" src="https://media.zaner-bloser.com/stenhouse/5KNF/images/5KNF-emailBanner.png">
+                    </a>
+                  </td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" valign="top"><!-- BEGIN COLUMNS // -->
+						<table border="0" cellpadding="0" cellspacing="0" id="templateColumns" role="presentation" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #FFFFFF; border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="100%">
+							<tbody>
+								<tr>
+									<td align="left" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" valign="top">
+									<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer" role="presentation">
+										<tbody>
+											<tr>
+												<td align="center" class="bodyContent" height="6" style="border-collapse:collapse;text-size-adjust: 100%; height:6px;" valign="top">&nbsp;</td>
+											</tr>
+											<tr>
+												<td class="pad-columns"  align="left" valign="top">
+												<h1 style="font-family:Arial, sans-serif,Open Sans">Now available!</h1>
+												</td>
+											</tr>
+											<tr>
+												<td align="center" class="bodyContent" height="6" style="border-collapse:collapse;text-size-adjust: 100%; height:6px;" valign="top">&nbsp;</td>
+											</tr>
+											<tr>
+												<td class="pad-columns bodyContent"  align="left" valign="top">In their ground-breaking approach, Stewart and Correia help teachers and librarians expand and balance their nonfiction collection to provide a broad array of titles that appeal to different types of readers.<br><br><img alt="Discovering a students passion and fueling it with high-quality nonfiction can make all the difference in their progress as a reader - Melissa Stewart and Marlene Correia" src="https://media.zaner-bloser.com/stenhouse/5KNF/images/5-Kinds-quote.png"></td>
+											</tr>
+											<tr>
+												<td align="center" class="bodyContent" height="6" style="border-collapse:collapse;text-size-adjust: 100%; height:6px;" valign="top">&nbsp;</td>
+											</tr>
+                      <tr>
+      									<td align="left" class="" style="padding: 0;" valign="top"><img alt="Active Browseable Traditional Expository Literature Narrative" src="https://media.zaner-bloser.com/stenhouse/5KNF/images/5KindsFigure2.1.jpg" width="100%"></td>
+      								</tr>
+											<tr>
+												<td align="center" class="bodyContent" height="6" style="border-collapse:collapse;text-size-adjust: 100%; height:6px;" valign="top">&nbsp;</td>
+											</tr>
+                      <tr>
+                        <td class="pad-columns" align="center" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+        												<td align="center" class="" valign="center">
+          												<table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+          													<tbody>
+          														<tr>
+          															<td>
+            															<table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+            																<tbody>
+            																	<tr>
+            																		<td align="center" bgcolor="#f05e2f">
+                                                  <a class="button" href="https://www.stenhouse.com/content/5-kinds-nonfiction" style="font-family:Arial, sans-serif,Open Sans;  border: 1px solid #f05e2f; padding: 5px 10px; font-size: 25px;" target="_blank">Learn More</a>
+                                                </td>
+            																	</tr>
+            																</tbody>
+            															</table>
+          															</td>
+          														</tr>
+                											<tr>
+                												<td align="center" class="bodyContent" height="6" style="border-collapse:collapse;text-size-adjust: 100%; height:6px;" valign="top">&nbsp;</td>
+                											</tr>
+                                      <tr>
+                                        <td class="pad-columns" align="center">
+                                        Also Available from major ebook providers
+                                        </td>
+                                      </tr>
+          													</tbody>
+          												</table>
+        												</td>
+                                <td align="right" style="text-align: right; margin: 0; padding: 0;">
+                                  <img alt="Introducing a new way to think about non-fiction. Melissa Stewart and Marlene Correia | 5 Kinds of Nonfiction | Stenhouse Publishers" src="https://media.zaner-bloser.com/stenhouse/5KNF/images/3D-cover-front-mock-up-5KindsNonfiction.png" width="100%">
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+											<tr>
+												<td align="center" class="bodyContent" height="6" style="border-collapse:collapse;text-size-adjust: 100%; height:6px;" valign="top">&nbsp;</td>
+											</tr>
+											<tr style="background-color: #85c2c3;">
+												<td class="pad-columns "  align="left" valign="top" style="font-size: 25px; font-weight: bold; text-align: center; color: #ffffff !important;">Also Available</td>
+											</tr>
+                      <tr>
+												<td align="center" class="bodyContent" height="6" style="border-collapse:collapse;text-size-adjust: 100%; height:6px;" valign="top">&nbsp;</td>
+											</tr>
+                      <tr>
+                        <td class="pad-columns" align="center" valign="top">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                            <tbody>
+                              <tr>
+                                <td align="center" valign="top" style="text-align: center;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="90%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" valign="top" style="text-align: center;">
+                                          <a href="https://www.stenhouse.com/content/text-sets-action" target="_blank">
+                                            <img valign="top"  alt="Introducing a new way to think about non-fiction. Melissa Stewart and Marlene Correia | 5 Kinds of Nonfiction | Stenhouse Publishers" src="https://media.zaner-bloser.com/stenhouse/5KNF/images/Cappiello-Dawes-RGB-email.png" width="150px">
+                                          </a>
+                                          <br><br><br><span style="font-style: italic; color: #f05e2f;">Text Sets in Action</span><br>Mary Ann Capiello & Erika Dawes<br><br>Mary Ann Capiello and Erika Dawes reveal how text sets can prompt serious thinking far more effectively than a textbook or any single text. Exploring many text leads learners to 'think more deeply, empathize more fully, and take action more deliberately.'
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td align="center" valign="top" style="text-align: center;">
+                                  <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" valign="top" style="text-align: center;">
+                                          <table align="right" border="0" cellpadding="0" cellspacing="0" role="presentation" width="90%">
+                                            <tbody>
+                                              <tr>
+                                                <td align="center" valign="top" style="text-align: center;">
+                                                  <img valign="top" alt="Introducing a new way to think about non-fiction. Melissa Stewart and Marlene Correia | 5 Kinds of Nonfiction | Stenhouse Publishers" src="https://media.zaner-bloser.com/stenhouse/5KNF/images/John-Schu-RGB-email.png" width="150px">
+                                                  <br><br><br><b>COMING IN 2022</b><br><span style="font-style: italic; color: #f05e2f;">The Gift of Story</span><br>John Schu<br><br>In this book of the heart, teacher, librarian, book lover, and story ambassador Mr. Schu invites readers to consider literacy beyond it's academic benefits, highlighting the ways story speaks to our hearts and brings us together.</td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+											<!-- to allow for 25px padding under an ending button -->
+											<tr>
+												<td align="center" class="bodyContent" height="23" style="border-collapse:collapse;text-size-adjust: 100%; height:23px;" valign="top">&nbsp;</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // END COLUMNS --></td>
+								</tr>
+								<tr>
+									<td align="center" valign="top"><!-- BEGIN FOOTER // -->
+									<table border="0" cellpadding="0" cellspacing="0" id="templateFooter" role="presentation" style="-ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #F4F4F4; border-collapse: collapse !important; mso-table-lspace: 0pt; mso-table-rspace: 0pt" width="100%">
+										<tbody>
+                      <tr>
+                        <td align="center" class="" valign="center" style="padding-top: 20px;">
+                          <table border="0" cellpadding="0" cellspacing="0" role="presentation" width="30%">
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" >
+                                          <a href="https://www.facebook.com/89318055113" style="text-decoration: none !important;" target="_blank"> <img src="https://static.hsstatic.net/TemplateAssets/static-1.24/img/hs_default_template_images/modules/Follow+Me+-+Email/facebook_original_black.png" alt="Facebook" height="30" style="width:auto!important;height:30px!important;vertical-align:middle;" valign="middle"> </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" >
+                                          <a href="https://twitter.com/stenhousepub" style="text-decoration: none !important;" target="_blank"> <img src="https://static.hsstatic.net/TemplateAssets/static-1.24/img/hs_default_template_images/modules/Follow+Me+-+Email/twitter_original_black.png" alt="Twitter" height="30" style="width:auto!important;height:30px!important;vertical-align:middle;" valign="middle"> </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" >
+                                          <a href="https://www.instagram.com/stenhouse_publishers" style="text-decoration: none !important;" target="_blank"> <img src="https://static.hsstatic.net/TemplateAssets/static-1.24/img/hs_default_template_images/modules/Follow+Me+-+Email/instagram_original_black.png" alt="Instagram" height="30" style="width:auto!important;height:30px!important;vertical-align:middle;" valign="middle"> </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                                <td>
+                                  <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" >
+                                          <a href="https://blog.stenhouse.com/" style="text-decoration: none !important;" target="_blank"> <img src="https://static.hsstatic.net/TemplateAssets/static-1.24/img/hs_default_template_images/modules/Follow+Me+-+Email/website_original_black.png" alt="Website" height="30" style="width:auto!important;height:30px!important;vertical-align:middle;" valign="middle"> </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+											</tr>
+											<tr>
+												<td align="center" class="footerContent" colspan="2" style="color: #55555 !important; padding-top: 10px;" valign="top">Stenhouse Publishers <span>•</span> 282 Corporate Drive, Suite 1 <span>•</span> Portsmouth, New Hampshire 03801, USA<br>
+												1.800.988.9812 <span>•</span> <a href="https://www.stenhouse.com" style="color:#808080; text-decoration: underline;" target="_blank">https://www.stenhouse.com</a></td>
+											</tr>
+											<tr style="">
+												<td align="left" class="original-only footerContentSubsection" colspan="2" style="background-color: #F4F4F4 !important; -ms-text-size-adjust: 100% !important; font-size: 8px;line-height: 13px; padding-bottom: 20px;" valign="top"><br>
+												<a href="{{view_online}}" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100% !important; -webkit-text-size-adjust: 100%;" target="_blank">View this e-mail in a browser</a>.<br>
+												This is a commercial message.<br>
+												If you do not want to receive similar electronic mail messages in the future, you may <a href="{{unsubscribe}}" style="color: #454545" target="_blank">unsubscribe</a> at any time.<br>
+												To ensure delivery to your inbox, please add <a href="mailto:stenhouse@e.stenhouse.com" style="color: #454545" target="_blank">stenhouse@e.stenhouse.com</a> to your address book.</td>
+											</tr>
+										</tbody>
+									</table>
+									<!-- // END FOOTER --></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- // END TEMPLATE --></td>
+					</tr>
+				</tbody>
+			</table>
+		  </td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>
